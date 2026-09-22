@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Lịch họp công ty</title>
+
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f2f2f2;
+                padding: 30px;
+            }
+
+            h1 {
+                text-align: center;
+                color: #3366cc;
+            }
+
+            table {
+                width: 90%;
+                margin: 25px auto;
+                border-collapse: collapse;
+                background-color: white;
+            }
+
+            th,
+            td {
+                border: 1px solid #999999;
+                padding: 15px;
+                text-align: center;
+            }
+
+            th {
+                background-color: #3366cc;
+                color: white;
+            }
+
+            td:first-child {
+                font-weight: bold;
+            }
+
+            tr:nth-child(even) {
+                background-color: #f5f5f5;
+            }
+
+            tr:hover {
+                background-color: #e6f0ff;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <h1>Lịch họp công ty</h1>
+
+        <table>
+            <tr>
+                <th rowspan="2">Ngày</th>
+                <th colspan="2">Giờ</th>
+                <th rowspan="2">Nội dung cuộc họp</th>
+            </tr>
+
+            <tr>
+                <th>09:00 - 10:00</th>
+                <th>10:00 - 11:00</th>
+            </tr>
+
+            <!-- Thứ Hai có hai cuộc họp -->
+            <tr>
+                <td rowspan="2">Thứ Hai</td>
+                <td>Họp phòng kinh doanh</td>
+                <td></td>
+                <td>Đánh giá doanh số tuần trước</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>Họp phòng kỹ thuật</td>
+                <td>Triển khai dự án mới</td>
+            </tr>
+
+            <!-- Thứ Ba có một cuộc họp kéo dài hai giờ -->
+            <tr>
+                <td>Thứ Ba</td>
+                <td colspan="2">09:00 - 11:00</td>
+                <td>Họp toàn công ty</td>
+            </tr>
+
+            <!-- Thứ Tư -->
+            <tr>
+                <td>Thứ Tư</td>
+                <td>Họp nhân sự</td>
+                <td></td>
+                <td>Đánh giá nhân sự</td>
+            </tr>
+
+        </table>
+
+    </body>
+</html>
