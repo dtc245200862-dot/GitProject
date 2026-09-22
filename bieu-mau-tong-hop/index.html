@@ -1,8 +1,9 @@
+
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Form đăng ký học viên</title>
+        <title>Các form HTML</title>
 
         <style>
             body {
@@ -17,11 +18,12 @@
                 background-color: white;
                 border: 1px solid #cccccc;
                 border-radius: 10px;
+                box-shadow: 0 0 10px #cccccc;
             }
 
             h2 {
                 text-align: center;
-                color: #0066cc;
+                color: #3366cc;
             }
 
             label {
@@ -46,10 +48,11 @@
 
             textarea {
                 height: 80px;
-                vertical-align: top;
                 resize: vertical;
+                vertical-align: top;
             }
 
+            .hobby-label,
             .gender-label {
                 width: auto;
                 font-weight: normal;
@@ -70,27 +73,128 @@
             }
 
             input[type="submit"] {
-                background-color: #0066cc;
+                background-color: #3366cc;
                 color: white;
             }
 
             input[type="reset"] {
                 background-color: #dddddd;
+                color: black;
             }
 
             input[type="submit"]:hover {
-                background-color: #004c99;
+                background-color: #224499;
             }
 
             input[type="reset"]:hover {
                 background-color: #bbbbbb;
             }
+
+            hr {
+                border: 0;
+                border-top: 2px solid #dddddd;
+                margin: 40px 0;
+            }
         </style>
     </head>
 
     <body>
+
+        <!-- PHẦN 1: FORM THÔNG TIN CÁ NHÂN -->
+
         <div class="form-container">
-            <h2>Đăng ký học viên</h2>
+            <h2>Phần 1: Thông tin cá nhân</h2>
+
+            <form action="#" method="post">
+
+                <label for="yourname">Họ và tên:</label>
+                <input
+                    type="text"
+                    id="yourname"
+                    name="yourname"
+                    placeholder="Nhập họ và tên"
+                    required
+                >
+
+                <br><br>
+
+                <label for="personal-email">Email:</label>
+                <input
+                    type="email"
+                    id="personal-email"
+                    name="email"
+                    placeholder="Nhập email"
+                    required
+                >
+
+                <br><br>
+
+                <label>Sở thích:</label>
+                <br>
+
+                <input
+                    type="checkbox"
+                    id="reading"
+                    name="hobby"
+                    value="reading"
+                >
+                <label class="hobby-label" for="reading">
+                    Đọc sách
+                </label>
+
+                <input
+                    type="checkbox"
+                    id="music"
+                    name="hobby"
+                    value="music"
+                >
+                <label class="hobby-label" for="music">
+                    Nghe nhạc
+                </label>
+
+                <br>
+
+                <input
+                    type="checkbox"
+                    id="gaming"
+                    name="hobby"
+                    value="gaming"
+                >
+                <label class="hobby-label" for="gaming">
+                    Chơi game
+                </label>
+
+                <input
+                    type="checkbox"
+                    id="travel"
+                    name="hobby"
+                    value="travel"
+                >
+                <label class="hobby-label" for="travel">
+                    Du lịch
+                </label>
+
+                <div class="buttons">
+                    <input
+                        type="submit"
+                        value="Gửi thông tin"
+                    >
+
+                    <input
+                        type="reset"
+                        value="Nhập lại"
+                    >
+                </div>
+
+            </form>
+        </div>
+
+        <hr>
+
+        <!-- PHẦN 2: FORM ĐĂNG KÝ HỌC VIÊN -->
+
+        <div class="form-container">
+            <h2>Phần 2: Đăng ký học viên</h2>
 
             <form action="#" method="post">
 
@@ -105,11 +209,11 @@
 
                 <br><br>
 
-                <label for="email">Email:</label>
+                <label for="student-email">Email:</label>
                 <input
                     type="email"
-                    id="email"
-                    name="email"
+                    id="student-email"
+                    name="studentEmail"
                     placeholder="Nhập email"
                     required
                 >
@@ -191,5 +295,6 @@
 
             </form>
         </div>
+
     </body>
 </html>
