@@ -1,0 +1,514 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Khảo sát khách hàng</title>
+
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #eeeeee;
+                margin: 0;
+                padding: 20px;
+            }
+
+            .survey-container {
+                max-width: 650px;
+                margin: 20px auto;
+                padding: 30px;
+                background-color: white;
+                border-radius: 8px;
+                box-shadow: 0 0 10px #cccccc;
+            }
+
+            h1 {
+                text-align: center;
+                color: #333333;
+                margin-bottom: 10px;
+            }
+
+            .description {
+                text-align: center;
+                color: #666666;
+                margin-bottom: 30px;
+            }
+
+            .form-group {
+                margin-bottom: 25px;
+            }
+
+            .form-group > label,
+            .question {
+                display: block;
+                font-weight: bold;
+                margin-bottom: 10px;
+                color: #333333;
+            }
+
+            select,
+            input[type="text"],
+            input[type="number"],
+            textarea {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #bbbbbb;
+                border-radius: 5px;
+                box-sizing: border-box;
+                font-size: 14px;
+            }
+
+            textarea {
+                height: 100px;
+                resize: vertical;
+            }
+
+            .option {
+                margin: 10px 0;
+            }
+
+            .option label {
+                font-weight: normal;
+                margin-left: 5px;
+            }
+
+            .price-input {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+
+            .price-input input {
+                width: 120px;
+                padding: 10px;
+                border: 1px solid #bbbbbb;
+                border-radius: 5px;
+            }
+
+            .rating-table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 15px;
+                font-size: 13px;
+            }
+
+            .rating-table th,
+            .rating-table td {
+                border: 1px solid #cccccc;
+                padding: 10px;
+                text-align: center;
+            }
+
+            .rating-table th {
+                background-color: #eeeeee;
+            }
+
+            .rating-table td:first-child {
+                text-align: left;
+            }
+
+            .submit-area {
+                text-align: center;
+                margin-top: 30px;
+            }
+
+            input[type="submit"],
+            input[type="reset"] {
+                padding: 12px 25px;
+                margin: 5px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 15px;
+            }
+
+            input[type="submit"] {
+                background-color: #337ab7;
+                color: white;
+            }
+
+            input[type="reset"] {
+                background-color: #dddddd;
+                color: #333333;
+            }
+
+            input[type="submit"]:hover {
+                background-color: #286090;
+            }
+
+            input[type="reset"]:hover {
+                background-color: #bbbbbb;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="survey-container">
+
+            <h1>Khảo sát khách hàng</h1>
+
+            <p class="description">
+                Vui lòng dành một chút thời gian để hoàn thành khảo sát
+                mức độ hài lòng này.
+            </p>
+
+            <form action="#" method="post">
+
+                <!-- ĐỘ TUỔI -->
+
+                <div class="form-group">
+                    <label for="age">1. Độ tuổi của bạn là bao nhiêu?</label>
+
+                    <select id="age" name="age" required>
+                        <option value="">-- Chọn độ tuổi --</option>
+                        <option value="under18">Dưới 18 tuổi</option>
+                        <option value="18-24">18 - 24 tuổi</option>
+                        <option value="25-34">25 - 34 tuổi</option>
+                        <option value="35-44">35 - 44 tuổi</option>
+                        <option value="45-54">45 - 54 tuổi</option>
+                        <option value="55plus">Từ 55 tuổi trở lên</option>
+                    </select>
+                </div>
+
+                <!-- THU NHẬP -->
+
+                <div class="form-group">
+                    <label for="income">
+                        2. Mức thu nhập hằng năm của bạn là bao nhiêu?
+                    </label>
+
+                    <select id="income" name="income" required>
+                        <option value="">-- Chọn mức thu nhập --</option>
+                        <option value="under20k">Dưới 20 triệu đồng</option>
+                        <option value="20-50k">20 - 50 triệu đồng</option>
+                        <option value="50-100k">50 - 100 triệu đồng</option>
+                        <option value="100-200k">100 - 200 triệu đồng</option>
+                        <option value="over200k">Trên 200 triệu đồng</option>
+                    </select>
+                </div>
+
+                <!-- GIỚI TÍNH -->
+
+                <div class="form-group">
+                    <label class="question">
+                        3. Giới tính của bạn
+                    </label>
+
+                    <div class="option">
+                        <input
+                            type="radio"
+                            id="male"
+                            name="gender"
+                            value="male"
+                        >
+                        <label for="male">Nam</label>
+                    </div>
+
+                    <div class="option">
+                        <input
+                            type="radio"
+                            id="female"
+                            name="gender"
+                            value="female"
+                        >
+                        <label for="female">Nữ</label>
+                    </div>
+
+                    <div class="option">
+                        <input
+                            type="radio"
+                            id="nonbinary"
+                            name="gender"
+                            value="nonbinary"
+                        >
+                        <label for="nonbinary">Không nhị nguyên</label>
+                    </div>
+
+                    <div class="option">
+                        <input
+                            type="radio"
+                            id="other"
+                            name="gender"
+                            value="other"
+                        >
+                        <label for="other">Khác</label>
+                    </div>
+
+                    <div class="option">
+                        <input
+                            type="radio"
+                            id="not-say"
+                            name="gender"
+                            value="not-say"
+                        >
+                        <label for="not-say">Không muốn trả lời</label>
+                    </div>
+                </div>
+
+                <!-- SẢN PHẨM ĐÃ MUA -->
+
+                <div class="form-group">
+                    <label class="question">
+                        4. Bạn đã mua sản phẩm nào trong 2 tháng gần đây?
+                        (Có thể chọn nhiều đáp án)
+                    </label>
+
+                    <div class="option">
+                        <input
+                            type="checkbox"
+                            id="product1"
+                            name="products"
+                            value="product1"
+                        >
+                        <label for="product1">Sản phẩm 1</label>
+                    </div>
+
+                    <div class="option">
+                        <input
+                            type="checkbox"
+                            id="product2"
+                            name="products"
+                            value="product2"
+                        >
+                        <label for="product2">Sản phẩm 2</label>
+                    </div>
+
+                    <div class="option">
+                        <input
+                            type="checkbox"
+                            id="product3"
+                            name="products"
+                            value="product3"
+                        >
+                        <label for="product3">Sản phẩm 3</label>
+                    </div>
+                </div>
+
+                <!-- TẦN SUẤT SỬ DỤNG -->
+
+                <div class="form-group">
+                    <label class="question">
+                        5. Bạn sẽ sử dụng sản phẩm mới với tần suất như thế nào?
+                    </label>
+
+                    <div class="option">
+                        <input
+                            type="radio"
+                            id="daily"
+                            name="frequency"
+                            value="daily"
+                        >
+                        <label for="daily">Hằng ngày</label>
+                    </div>
+
+                    <div class="option">
+                        <input
+                            type="radio"
+                            id="weekly"
+                            name="frequency"
+                            value="weekly"
+                        >
+                        <label for="weekly">Hằng tuần</label>
+                    </div>
+
+                    <div class="option">
+                        <input
+                            type="radio"
+                            id="monthly"
+                            name="frequency"
+                            value="monthly"
+                        >
+                        <label for="monthly">Hằng tháng</label>
+                    </div>
+                </div>
+
+                <!-- MỨC GIÁ -->
+
+                <div class="form-group">
+                    <label class="question">
+                        6. Bạn sẵn sàng trả bao nhiêu cho sản phẩm mới?
+                    </label>
+
+                    <div class="price-input">
+                        <span>$</span>
+
+                        <input
+                            type="number"
+                            name="dollars"
+                            placeholder="Dollars"
+                            min="0"
+                        >
+
+                        <span>.</span>
+
+                        <input
+                            type="number"
+                            name="cents"
+                            placeholder="Cents"
+                            min="0"
+                            max="99"
+                        >
+                    </div>
+                </div>
+
+                <!-- TÍNH NĂNG MONG MUỐN -->
+
+                <div class="form-group">
+                    <label for="features">
+                        7. Bạn muốn sản phẩm mới có những tính năng nào?
+                    </label>
+
+                    <textarea
+                        id="features"
+                        name="features"
+                        placeholder="Nhập ý kiến của bạn..."
+                    ></textarea>
+                </div>
+
+                <!-- BẢNG ĐÁNH GIÁ -->
+
+                <div class="form-group">
+                    <label class="question">
+                        8. Hãy đánh giá mức độ đồng ý của bạn với các nhận định sau.
+                    </label>
+
+                    <table class="rating-table">
+                        <tr>
+                            <th>Nhận định</th>
+                            <th>Hoàn toàn không đồng ý</th>
+                            <th>Không đồng ý</th>
+                            <th>Đồng ý</th>
+                            <th>Hoàn toàn đồng ý</th>
+                        </tr>
+
+                        <tr>
+                            <td>Sản phẩm của chúng tôi có giá hợp lý.</td>
+
+                            <td>
+                                <input
+                                    type="radio"
+                                    name="price_rating"
+                                    value="1"
+                                >
+                            </td>
+
+                            <td>
+                                <input
+                                    type="radio"
+                                    name="price_rating"
+                                    value="2"
+                                >
+                            </td>
+
+                            <td>
+                                <input
+                                    type="radio"
+                                    name="price_rating"
+                                    value="3"
+                                >
+                            </td>
+
+                            <td>
+                                <input
+                                    type="radio"
+                                    name="price_rating"
+                                    value="4"
+                                >
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Sản phẩm của chúng tôi có chất lượng cao.</td>
+
+                            <td>
+                                <input
+                                    type="radio"
+                                    name="quality_rating"
+                                    value="1"
+                                >
+                            </td>
+
+                            <td>
+                                <input
+                                    type="radio"
+                                    name="quality_rating"
+                                    value="2"
+                                >
+                            </td>
+
+                            <td>
+                                <input
+                                    type="radio"
+                                    name="quality_rating"
+                                    value="3"
+                                >
+                            </td>
+
+                            <td>
+                                <input
+                                    type="radio"
+                                    name="quality_rating"
+                                    value="4"
+                                >
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Bạn sẽ giới thiệu sản phẩm cho bạn bè hoặc đồng nghiệp.</td>
+
+                            <td>
+                                <input
+                                    type="radio"
+                                    name="recommend_rating"
+                                    value="1"
+                                >
+                            </td>
+
+                            <td>
+                                <input
+                                    type="radio"
+                                    name="recommend_rating"
+                                    value="2"
+                                >
+                            </td>
+
+                            <td>
+                                <input
+                                    type="radio"
+                                    name="recommend_rating"
+                                    value="3"
+                                >
+                            </td>
+
+                            <td>
+                                <input
+                                    type="radio"
+                                    name="recommend_rating"
+                                    value="4"
+                                >
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- NÚT ĐIỀU KHIỂN -->
+
+                <div class="submit-area">
+                    <input
+                        type="submit"
+                        value="Gửi khảo sát"
+                    >
+
+                    <input
+                        type="reset"
+                        value="Nhập lại"
+                    >
+                </div>
+
+            </form>
+
+        </div>
+
+    </body>
+</html>
