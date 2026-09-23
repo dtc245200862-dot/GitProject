@@ -1,0 +1,151 @@
+
+/* Định dạng chung */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+/* Khung trang web */
+.trang-web {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+/* Phần đầu trang */
+header {
+    height: 130px;
+    background-color: #d9eaf7;
+    border: 1px solid #333;
+    padding: 20px;
+}
+
+header h1 {
+    color: #1e4d75;
+    margin: 10px 0;
+}
+
+header p {
+    margin: 0;
+}
+
+/* Thanh điều hướng */
+nav {
+    height: 50px;
+    background-color: #1e4d75;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 18px;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+/* Khu vực ba cột */
+.bo-cuc {
+    width: 100%;
+    overflow: hidden;
+    padding-top: 5px;
+}
+
+/* Cột bên trái */
+.cot-trai {
+    width: 200px;
+    min-height: 400px;
+    background-color: #e8f1f8;
+    float: left;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+.cot-trai h3 {
+    color: #1e4d75;
+}
+
+.cot-trai ul {
+    padding-left: 20px;
+}
+
+.cot-trai li {
+    margin-bottom: 15px;
+}
+
+.cot-trai a {
+    color: #333;
+    text-decoration: none;
+}
+
+.cot-trai a:hover {
+    color: red;
+}
+
+/* Nội dung chính */
+.noi-dung-chinh {
+    width: 560px;
+    min-height: 400px;
+    background-color: white;
+    float: left;
+    padding: 15px;
+    margin-left: 5px;
+    border: 1px solid #ccc;
+}
+
+.noi-dung-chinh h2 {
+    color: #1e4d75;
+    border-bottom: 2px solid #1e4d75;
+    padding-bottom: 10px;
+}
+
+article {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+article h3 {
+    color: #333;
+    margin-top: 0;
+}
+
+/* Cột bên phải */
+.cot-phai {
+    width: 225px;
+    min-height: 400px;
+    background-color: #fff3cd;
+    float: right;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+.cot-phai h3 {
+    color: #856404;
+}
+
+/* Chân trang */
+footer {
+    clear: both;
+    height: 90px;
+    background-color: #1e4d75;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 5px;
+}
+
+footer p {
+    margin: 8px;
+}
