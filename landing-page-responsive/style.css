@@ -1,0 +1,391 @@
+
+/* ============================= */
+/* CÀI ĐẶT CHUNG */
+/* ============================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.3;
+}
+
+.tieu-de-phu {
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+/* ============================= */
+/* HEADER */
+/* ============================= */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    padding: 20px 8%;
+
+    background-color: #111827;
+    color: white;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #60a5fa;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    gap: 28px;
+}
+
+.nav a {
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #60a5fa;
+}
+
+/* ============================= */
+/* HERO */
+/* ============================= */
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 480px;
+    padding: 80px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #dbeafe,
+        #eff6ff
+    );
+
+    text-align: center;
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 750px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #1e3a8a;
+    margin-bottom: 20px;
+}
+
+.mo-ta {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    font-size: 18px;
+    color: #4b5563;
+}
+
+/* Nút CTA */
+.btn {
+    display: inline-block;
+
+    padding: 13px 28px;
+    border-radius: 8px;
+
+    background-color: #2563eb;
+    color: white;
+
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #1d4ed8;
+}
+
+/* ============================= */
+/* SERVICES */
+/* ============================= */
+
+.services {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.services h2,
+.testimonials h2 {
+    font-size: 34px;
+    color: #1e293b;
+    margin-bottom: 40px;
+}
+
+/* Sử dụng CSS Grid tạo các cột */
+.service-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.service {
+    padding: 35px 25px;
+
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.service h3 {
+    color: #1e40af;
+    margin-bottom: 12px;
+}
+
+.service p {
+    color: #64748b;
+}
+
+/* ============================= */
+/* TESTIMONIALS */
+/* ============================= */
+
+.testimonials {
+    padding: 80px 8%;
+    background-color: #f1f5f9;
+    text-align: center;
+}
+
+.testimonial-container {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.testimonial {
+    padding: 30px;
+
+    background-color: white;
+    border-radius: 12px;
+
+    border-left: 5px solid #2563eb;
+    text-align: left;
+}
+
+.testimonial p {
+    font-style: italic;
+    margin-bottom: 15px;
+    color: #475569;
+}
+
+.testimonial h3 {
+    color: #1e40af;
+    font-size: 16px;
+}
+
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+
+.footer {
+    padding: 40px 20px;
+
+    background-color: #111827;
+    color: white;
+
+    text-align: center;
+}
+
+.footer h3 {
+    color: #60a5fa;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    color: #cbd5e1;
+}
+
+.ban-quyen {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* ============================= */
+/* RESPONSIVE TABLET */
+/* ============================= */
+
+@media (max-width: 900px) {
+
+    .header {
+        padding: 20px 5%;
+    }
+
+    .nav ul {
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .services,
+    .testimonials {
+        padding: 60px 5%;
+    }
+
+    .service-container {
+        gap: 15px;
+    }
+}
+
+/* ============================= */
+/* RESPONSIVE MOBILE */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+    /* Header */
+    .header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .nav a {
+        font-size: 14px;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 400px;
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .mo-ta {
+        font-size: 16px;
+    }
+
+    /* Services chuyển thành một cột */
+    .service-container {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+    }
+
+    .services h2,
+    .testimonials h2 {
+        font-size: 28px;
+    }
+
+    /* Testimonials chuyển thành một cột */
+    .testimonial-container {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+    }
+
+    .testimonial {
+        text-align: center;
+    }
+}
+
+/* ============================= */
+/* RESPONSIVE ĐIỆN THOẠI NHỎ */
+/* ============================= */
+
+@media (max-width: 480px) {
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .nav ul {
+        gap: 10px;
+    }
+
+    .nav a {
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero {
+        padding: 50px 15px;
+    }
+
+    .services,
+    .testimonials {
+        padding: 50px 15px;
+    }
+
+    .services h2,
+    .testimonials h2 {
+        font-size: 25px;
+    }
+
+    .service {
+        padding: 25px 20px;
+    }
+
+    .btn {
+        padding: 12px 22px;
+    }
+}
