@@ -1,0 +1,87 @@
+
+/* Định dạng chung */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+/* Khung trang web */
+.trang-web {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+}
+
+/* Tiêu đề */
+h1 {
+    display: block;
+    color: #1e4d75;
+    margin-bottom: 25px;
+}
+
+/* Thanh điều hướng */
+nav {
+    display: block;
+    background-color: #1e4d75;
+    padding: 15px;
+    margin-bottom: 25px;
+}
+
+nav a {
+    display: inline-block;
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+/* Khu vực chứa ba cột */
+section {
+    display: block;
+    margin-top: 20px;
+    font-size: 0;
+}
+
+/* Các cột */
+.box {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    max-width: 320px;
+    min-height: 180px;
+    padding: 20px;
+    margin: 10px;
+    background-color: lightblue;
+    border: 1px solid #7aaec7;
+    font-size: 16px;
+}
+
+.box h2 {
+    color: #1e4d75;
+}
+
+.box p {
+    line-height: 1.6;
+}
+
+/* Chân trang */
+footer {
+    display: block;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #1e4d75;
+    color: white;
+}
