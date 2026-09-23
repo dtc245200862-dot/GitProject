@@ -1,0 +1,121 @@
+
+/* Thiết lập chung */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* Thanh điều hướng */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+}
+
+/* Logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Danh sách menu */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+/* Các mục menu */
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00bcd4;
+}
+
+/* Nút menu trên mobile */
+.menu-icon {
+    display: none;
+
+    border: none;
+    background: transparent;
+    color: white;
+
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Nội dung trang */
+.noi-dung {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.noi-dung h1 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Responsive cho màn hình nhỏ */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    /* Ẩn danh sách menu */
+    .nav-links {
+        display: none;
+
+        flex-direction: column;
+        gap: 0;
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        width: 100%;
+        background-color: #333;
+
+        text-align: center;
+        z-index: 10;
+    }
+
+    /* Hiển thị menu khi có class active */
+    .nav-links.active {
+        display: flex;
+    }
+
+    /* Khoảng cách giữa các mục */
+    .nav-links li {
+        border-top: 1px solid #555;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 15px;
+    }
+
+    /* Hiển thị nút menu */
+    .menu-icon {
+        display: block;
+    }
+}
