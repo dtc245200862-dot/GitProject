@@ -1,0 +1,94 @@
+
+/* Thiết lập chung */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+/* Khung trang web */
+.trang-web {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+}
+
+/* Tiêu đề */
+h1 {
+    display: block;
+    text-align: center;
+    color: #1e4d75;
+    margin-bottom: 30px;
+}
+
+/* Khu vực hai cột */
+.container {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+/* Cột bên trái */
+.left-column {
+    width: 48%;
+    min-height: 220px;
+    float: left;
+    background-color: lightgray;
+    padding: 20px;
+    border: 1px solid #999;
+}
+
+/* Cột bên phải */
+.right-column {
+    width: 48%;
+    min-height: 220px;
+    float: right;
+    background-color: lightgreen;
+    padding: 20px;
+    border: 1px solid #78a878;
+}
+
+/* Xóa ảnh hưởng của float */
+.clear-float {
+    clear: both;
+}
+
+/* Tiêu đề phần Overflow */
+h2 {
+    color: #1e4d75;
+}
+
+/* Hộp chứa nội dung dài */
+.overflow-box {
+    width: 300px;
+    height: 150px;
+    background-color: lightcoral;
+    padding: 10px;
+    border: 2px solid #c44b4b;
+
+    /* Hiển thị thanh cuộn khi cần */
+    overflow: auto;
+
+    /* Cho phép xuống dòng */
+    overflow-wrap: break-word;
+
+    text-align: left;
+    line-height: 1.5;
+}
+
+/* Chân trang */
+footer {
+    clear: both;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #1e4d75;
+    color: white;
+    text-align: center;
+}
