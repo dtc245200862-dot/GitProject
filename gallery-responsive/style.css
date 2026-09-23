@@ -1,0 +1,64 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.description {
+    color: #555555;
+    margin-bottom: 20px;
+}
+
+/* Bố cục mặc định: 4 ảnh trên một dòng */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+}
+
+.gallery-item {
+    width: 25%;
+    padding: 10px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border: 1px solid #dddddd;
+    display: block;
+}
+
+.gallery-item p {
+    margin: 8px 0 0;
+    color: #555555;
+}
+
+/* Màn hình từ 500px đến 700px: 2 ảnh trên một dòng */
+@media screen and (max-width: 700px) {
+    .gallery-item {
+        width: 50%;
+    }
+}
+
+/* Màn hình nhỏ hơn 500px: 1 ảnh trên một dòng */
+@media screen and (max-width: 500px) {
+    .gallery-item {
+        width: 100%;
+    }
+
+    .gallery-item img {
+        height: auto;
+    }
+}
