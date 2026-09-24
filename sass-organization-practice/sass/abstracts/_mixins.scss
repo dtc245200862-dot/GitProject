@@ -1,14 +1,10 @@
-@mixin flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+﻿@mixin button-style($bg-color) {
+  background: $bg-color;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
 }
 
-@mixin button-style {
-    display: inline-block;
-    padding: 12px 24px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
+@mixin box-shadow {
+  box-shadow: $box-shadow;
 }

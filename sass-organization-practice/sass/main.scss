@@ -1,15 +1,6 @@
-// Abstracts
-@import "abstracts/variables";
+﻿@import "abstracts/variables";
 @import "abstracts/mixins";
-
-// Base
-@import "base/reset";
 @import "base/global";
-
-// Layout
-@import "layout/header";
-@import "layout/footer";
-
-// Components
+@import "layout/container";
 @import "components/buttons";
 @import "components/cards";
