@@ -1,0 +1,361 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Giới Thiệu Công Ty</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    >
+
+    <style>
+        .hero {
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #0d6efd, #6610f2);
+        }
+
+        .service-card {
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .about-section {
+            background-color: #f8f9fa;
+        }
+
+        .contact-section {
+            background-color: #e9f2ff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
+
+        <div class="container">
+
+            <a class="navbar-brand fw-bold text-primary" href="#">
+                Công Ty ABC
+            </a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Mở menu"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">
+                            Trang Chủ
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">
+                            Về Chúng Tôi
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">
+                            Dịch Vụ
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">
+                            Liên Hệ
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Hero Section -->
+    <header id="home" class="hero text-white text-center">
+
+        <div class="container">
+
+            <h1 class="display-4 fw-bold">
+                Chào mừng đến với Công Ty ABC
+            </h1>
+
+            <p class="lead my-4">
+                Chúng tôi cung cấp các giải pháp chuyên nghiệp
+                cho doanh nghiệp của bạn.
+            </p>
+
+            <a href="#services" class="btn btn-light btn-lg">
+                Tìm Hiểu Ngay
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- About Section -->
+    <section id="about" class="about-section py-5">
+
+        <div class="container">
+
+            <h2 class="text-center fw-bold mb-4">
+                Về Chúng Tôi
+            </h2>
+
+            <div class="row align-items-center">
+
+                <div class="col-md-6 mb-4 mb-md-0">
+
+                    <h3 class="text-primary">
+                        Đối tác công nghệ đáng tin cậy
+                    </h3>
+
+                    <p>
+                        Công ty ABC chuyên cung cấp các dịch vụ công nghệ,
+                        thiết kế website và tiếp thị kỹ thuật số.
+                    </p>
+
+                    <p>
+                        Chúng tôi luôn nỗ lực mang đến các giải pháp
+                        hiệu quả, hiện đại và phù hợp với nhu cầu
+                        của từng khách hàng.
+                    </p>
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <div class="bg-primary text-white rounded p-5 text-center">
+
+                        <h3>Đổi mới và phát triển</h3>
+
+                        <p class="mb-0">
+                            Đồng hành cùng doanh nghiệp trong thời đại số.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Services Section -->
+    <section id="services" class="container py-5">
+
+        <h2 class="text-center fw-bold mb-5">
+            Dịch Vụ Của Chúng Tôi
+        </h2>
+
+        <div class="row g-4">
+
+            <!-- Service 1 -->
+            <div class="col-md-4">
+
+                <div class="card service-card h-100 shadow-sm text-center">
+
+                    <div class="card-body p-4">
+
+                        <div class="display-4 mb-3">
+                            💻
+                        </div>
+
+                        <h3 class="card-title h4">
+                            Thiết Kế Website
+                        </h3>
+
+                        <p class="card-text">
+                            Thiết kế giao diện chuyên nghiệp,
+                            hiện đại và tối ưu hóa trải nghiệm
+                            người dùng.
+                        </p>
+
+                        <a href="#contact" class="btn btn-primary">
+                            Tìm hiểu thêm
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Service 2 -->
+            <div class="col-md-4">
+
+                <div class="card service-card h-100 shadow-sm text-center">
+
+                    <div class="card-body p-4">
+
+                        <div class="display-4 mb-3">
+                            📈
+                        </div>
+
+                        <h3 class="card-title h4">
+                            Marketing Online
+                        </h3>
+
+                        <p class="card-text">
+                            Cung cấp giải pháp tiếp thị số
+                            giúp doanh nghiệp tiếp cận
+                            nhiều khách hàng hơn.
+                        </p>
+
+                        <a href="#contact" class="btn btn-primary">
+                            Tìm hiểu thêm
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Service 3 -->
+            <div class="col-md-4">
+
+                <div class="card service-card h-100 shadow-sm text-center">
+
+                    <div class="card-body p-4">
+
+                        <div class="display-4 mb-3">
+                            🛠️
+                        </div>
+
+                        <h3 class="card-title h4">
+                            Hỗ Trợ Khách Hàng
+                        </h3>
+
+                        <p class="card-text">
+                            Đội ngũ hỗ trợ tận tình,
+                            sẵn sàng giải đáp thắc mắc
+                            của khách hàng 24/7.
+                        </p>
+
+                        <a href="#contact" class="btn btn-primary">
+                            Tìm hiểu thêm
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5 text-center">
+
+        <div class="container">
+
+            <h2 class="fw-bold mb-4">
+                Liên Hệ Với Chúng Tôi
+            </h2>
+
+            <p>
+                Hãy liên hệ với chúng tôi để được tư vấn và hỗ trợ.
+            </p>
+
+            <div class="row justify-content-center">
+
+                <div class="col-md-6">
+
+                    <div class="card shadow-sm">
+
+                        <div class="card-body p-4">
+
+                            <p>
+                                <strong>Email:</strong>
+                                contact@company.com
+                            </p>
+
+                            <p>
+                                <strong>Hotline:</strong>
+                                0988 123 456
+                            </p>
+
+                            <p class="mb-0">
+                                <strong>Địa chỉ:</strong>
+                                Thái Nguyên, Việt Nam
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+
+        <div class="container">
+
+            <p class="mb-1">
+                &copy; 2026 Công Ty ABC. All rights reserved.
+            </p>
+
+            <p class="mb-0">
+                Thiết kế bằng HTML và Bootstrap
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap JavaScript -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+
+</html>
