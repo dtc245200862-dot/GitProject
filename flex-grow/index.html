@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hành Flex Grow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Thực hành thuộc tính flex-grow</h1>
+
+    <h2>1. Không sử dụng flex-grow</h2>
+
+    <div class="container example-1">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+    </div>
+
+    <h2>2. Item 2 có flex-grow: 1</h2>
+
+    <div class="container example-2">
+        <div class="item">Item 1</div>
+        <div class="item grow-1">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+    </div>
+
+    <h2>3. So sánh flex-grow: 1 và flex-grow: 2</h2>
+
+    <div class="container example-3">
+        <div class="item grow-1">Grow 1</div>
+        <div class="item grow-2">Grow 2</div>
+        <div class="item">Grow 0</div>
+    </div>
+
+    <h2>4. Hai item cùng flex-grow: 1</h2>
+
+    <div class="container example-4">
+        <div class="item grow-1">Grow 1</div>
+        <div class="item grow-1">Grow 1</div>
+        <div class="item">Grow 0</div>
+    </div>
+
+</body>
+</html>

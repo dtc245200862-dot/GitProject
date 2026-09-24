@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    margin-top: 30px;
+    color: #444;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+    min-height: 100px;
+    gap: 10px;
+    padding: 10px;
+    border: 2px solid #333;
+    background-color: white;
+}
+
+.item {
+    flex-basis: 100px;
+    flex-shrink: 0;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* 1. Các item không phát triển */
+.example-1 .item {
+    flex-grow: 0;
+}
+
+/* 2. Chỉ Item 2 phát triển */
+.example-2 .grow-1 {
+    flex-grow: 1;
+    background-color: #e67e22;
+}
+
+/* 3. So sánh grow 1 và grow 2 */
+.example-3 .grow-1 {
+    flex-grow: 1;
+    background-color: #27ae60;
+}
+
+.example-3 .grow-2 {
+    flex-grow: 2;
+    background-color: #e74c3c;
+}
+
+/* 4. Hai item cùng phát triển */
+.example-4 .grow-1 {
+    flex-grow: 1;
+    background-color: #9b59b6;
+}
