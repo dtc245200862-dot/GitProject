@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+.header h1 {
+    margin-bottom: 8px;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 15px;
+    background-color: #444;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    color: #f1c40f;
+}
+
+/* Main container */
+.main-container {
+    display: flex;
+    flex: 1;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Main content */
+.content {
+    flex: 3;
+    padding: 25px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.content h2 {
+    margin-bottom: 15px;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.card {
+    flex: 1 1 180px;
+    padding: 20px;
+    background-color: #eaf4ff;
+    border: 1px solid #c5dff5;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #2471a3;
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 1;
+    min-width: 200px;
+    padding: 25px;
+    background-color: #e8e8e8;
+    border-radius: 8px;
+}
+
+.sidebar h2 {
+    margin-bottom: 15px;
+}
+
+.sidebar p {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+/* Responsive trên màn hình nhỏ */
+@media (max-width: 768px) {
+
+    .main-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .sidebar {
+        min-width: 100%;
+    }
+
+    .nav {
+        gap: 15px;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+}
