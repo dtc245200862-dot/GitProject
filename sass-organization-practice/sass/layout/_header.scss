@@ -1,0 +1,48 @@
+.header {
+    background-color: $primary-color;
+    color: $white-color;
+    text-align: center;
+    padding: 60px $spacing-medium;
+
+    h1 {
+        font-size: 40px;
+        margin-bottom: $spacing-small;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+.navbar {
+    background-color: $white-color;
+    padding: $spacing-medium 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        color: $primary-color;
+        font-size: 22px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: $spacing-medium;
+    }
+
+    a {
+        color: $text-color;
+        text-decoration: none;
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+}

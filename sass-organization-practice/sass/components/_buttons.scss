@@ -1,0 +1,10 @@
+.button {
+    @include button-style;
+
+    background-color: $primary-color;
+    color: $white-color;
+
+    &:hover {
+        background-color: $secondary-color;
+    }
+}

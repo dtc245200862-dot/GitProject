@@ -1,0 +1,30 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: $spacing-medium;
+    margin-top: $spacing-large;
+}
+
+.card {
+    background-color: $white-color;
+    padding: $spacing-medium;
+    border-radius: $border-radius;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+
+    h3 {
+        color: $primary-color;
+        margin-bottom: $spacing-small;
+    }
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+    }
+}
+
+@media (max-width: 768px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}

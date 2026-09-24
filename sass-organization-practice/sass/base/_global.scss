@@ -1,0 +1,16 @@
+body {
+    font-family: $font-stack;
+    background-color: $background-color;
+    color: $text-color;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 $spacing-medium;
+}
+
+.section {
+    padding: $spacing-large $spacing-medium;
+}
