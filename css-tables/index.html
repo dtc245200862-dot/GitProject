@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Danh sách trong CSS</title>
+
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f2f2f2;
+                padding: 20px;
+            }
+
+            h1 {
+                color: #333333;
+            }
+
+            h2 {
+                color: #0066cc;
+                border-bottom: 2px solid #0066cc;
+                padding-bottom: 5px;
+            }
+
+            .box {
+                background-color: white;
+                padding: 20px;
+                margin-bottom: 20px;
+                border-radius: 8px;
+            }
+
+            /* 1. Các kiểu đánh dấu danh sách */
+
+            .disc {
+                list-style-type: disc;
+            }
+
+            .circle {
+                list-style-type: circle;
+            }
+
+            .square {
+                list-style-type: square;
+            }
+
+            .decimal {
+                list-style-type: decimal;
+            }
+
+            .upper-alpha {
+                list-style-type: upper-alpha;
+            }
+
+            .lower-roman {
+                list-style-type: lower-roman;
+            }
+
+            /* 2. Đánh dấu bằng hình ảnh */
+
+            .image-list {
+                list-style-image: url("https://cdn-icons-png.flaticon.com/16/845/845646.png");
+            }
+
+            /* 3. Vị trí đánh dấu */
+
+            .inside {
+                list-style-position: inside;
+                background-color: #e6f7ff;
+                padding: 10px;
+            }
+
+            .outside {
+                list-style-position: outside;
+                background-color: #fff0f0;
+                padding: 10px;
+            }
+
+            /* 4. Thuộc tính rút gọn */
+
+            .short-list {
+                list-style: square inside;
+            }
+
+            /* 5. Danh sách có màu sắc */
+
+            .color-list {
+                color: #0066cc;
+                font-size: 18px;
+            }
+
+            .color-list li {
+                color: #cc3300;
+                margin: 8px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Thực hành: Danh sách trong CSS</h1>
+
+        <div class="box">
+            <h2>1. Các kiểu đánh dấu danh sách không có thứ tự</h2>
+
+            <h3>Disc</h3>
+            <ul class="disc">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+
+            <h3>Circle</h3>
+            <ul class="circle">
+                <li>Toán</li>
+                <li>Văn</li>
+                <li>Anh</li>
+            </ul>
+
+            <h3>Square</h3>
+            <ul class="square">
+                <li>Thái Nguyên</li>
+                <li>Hà Nội</li>
+                <li>Đà Nẵng</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h2>2. Các kiểu đánh dấu danh sách có thứ tự</h2>
+
+            <h3>Số thứ tự</h3>
+            <ol class="decimal">
+                <li>Bước 1</li>
+                <li>Bước 2</li>
+                <li>Bước 3</li>
+            </ol>
+
+            <h3>Chữ cái in hoa</h3>
+            <ol class="upper-alpha">
+                <li>Phần đầu</li>
+                <li>Phần thân</li>
+                <li>Phần cuối</li>
+            </ol>
+
+            <h3>Số La Mã viết thường</h3>
+            <ol class="lower-roman">
+                <li>Giới thiệu</li>
+                <li>Nội dung</li>
+                <li>Kết luận</li>
+            </ol>
+        </div>
+
+        <div class="box">
+            <h2>3. Đánh dấu mục bằng hình ảnh</h2>
+
+            <ul class="image-list">
+                <li>Sản phẩm thứ nhất</li>
+                <li>Sản phẩm thứ hai</li>
+                <li>Sản phẩm thứ ba</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h2>4. Vị trí đánh dấu danh sách</h2>
+
+            <h3>Inside</h3>
+            <ul class="inside">
+                <li>Đánh dấu nằm bên trong nội dung của danh sách.</li>
+                <li>Đây là một ví dụ về inside.</li>
+            </ul>
+
+            <h3>Outside</h3>
+            <ul class="outside">
+                <li>Đánh dấu nằm bên ngoài nội dung của danh sách.</li>
+                <li>Đây là một ví dụ về outside.</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h2>5. Thuộc tính rút gọn list-style</h2>
+
+            <ul class="short-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h2>6. Tạo kiểu danh sách với màu sắc</h2>
+
+            <ul class="color-list">
+                <li>Mục thứ nhất</li>
+                <li>Mục thứ hai</li>
+                <li>Mục thứ ba</li>
+            </ul>
+        </div>
+    </body>
+</html>
