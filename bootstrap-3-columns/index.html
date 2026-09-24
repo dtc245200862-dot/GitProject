@@ -1,0 +1,356 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap Grid - 3 Columns</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+
+        /* TIÊU ĐỀ */
+        .page-title {
+            margin-top: 40px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        /* 3 CỘT */
+        .column-box {
+            min-height: 180px;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .column-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .column-box p {
+            margin: 0;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .column-box i {
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        /* KHU VỰC MARGIN VÀ PADDING */
+        .spacing-section {
+            background-color: white;
+            border-radius: 8px;
+        }
+
+        /* KHU VỰC DISPLAY */
+        .display-section {
+            border-radius: 8px;
+        }
+
+        /* FOOTER */
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #212529;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- TIÊU ĐỀ -->
+    <div class="container">
+
+        <h1 class="page-title">
+            <i class="fas fa-table-columns"></i>
+            Bố cục 3 cột với Bootstrap
+        </h1>
+
+    </div>
+
+
+    <!-- ================= BƯỚC 1: GRID VÀ FLEXBOX ================= -->
+
+    <section class="container mt-5">
+
+        <h3 class="text-center mb-4">
+            Bước 1: Bootstrap Grid và Flexbox
+        </h3>
+
+        <div class="row g-3">
+
+            <!-- CỘT 1 -->
+            <div class="col-md-4">
+
+                <div class="column-box d-flex flex-column justify-content-center align-items-center bg-light p-3 text-center">
+
+                    <i class="fas fa-laptop text-primary"></i>
+
+                    <p>Phần 1</p>
+
+                    <span class="text-muted">
+                        Nội dung cột thứ nhất
+                    </span>
+
+                </div>
+
+            </div>
+
+            <!-- CỘT 2 -->
+            <div class="col-md-4">
+
+                <div class="column-box d-flex flex-column justify-content-center align-items-center bg-secondary p-3 text-white text-center">
+
+                    <i class="fas fa-code"></i>
+
+                    <p>Phần 2</p>
+
+                    <span>
+                        Nội dung cột thứ hai
+                    </span>
+
+                </div>
+
+            </div>
+
+            <!-- CỘT 3 -->
+            <div class="col-md-4">
+
+                <div class="column-box d-flex flex-column justify-content-center align-items-center bg-light p-3 text-center">
+
+                    <i class="fas fa-mobile-screen text-primary"></i>
+
+                    <p>Phần 3</p>
+
+                    <span class="text-muted">
+                        Nội dung cột thứ ba
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= BƯỚC 2: MARGIN VÀ PADDING ================= -->
+
+    <section class="container my-5 py-3 spacing-section shadow-sm">
+
+        <h3 class="text-center">
+            Bước 2: Margin và Padding
+        </h3>
+
+        <p class="text-center text-muted mt-3 mb-0">
+            Section này sử dụng my-5 và py-3 để tạo khoảng cách.
+        </p>
+
+        <div class="row mt-4">
+
+            <div class="col-md-6">
+
+                <div class="bg-primary text-white p-4 rounded">
+
+                    <h4>Margin</h4>
+
+                    <p class="mb-0">
+                        Margin tạo khoảng cách bên ngoài phần tử.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6 mt-3 mt-md-0">
+
+                <div class="bg-success text-white p-4 rounded">
+
+                    <h4>Padding</h4>
+
+                    <p class="mb-0">
+                        Padding tạo khoảng cách bên trong phần tử.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= BƯỚC 3: DISPLAY PROPERTY ================= -->
+
+    <section class="container my-5">
+
+        <h3 class="text-center mb-4">
+            Bước 3: Display Property
+        </h3>
+
+        <!-- Chỉ hiển thị từ màn hình md trở lên -->
+        <div class="d-none d-md-block bg-warning text-center p-4 display-section">
+
+            <i class="fas fa-desktop fa-2x mb-3"></i>
+
+            <p class="mb-0 fw-bold">
+                Nội dung này chỉ hiển thị trên màn hình lớn hơn hoặc bằng 768px.
+            </p>
+
+        </div>
+
+        <!-- Chỉ hiển thị trên màn hình nhỏ -->
+        <div class="d-block d-md-none bg-info text-dark text-center p-4 display-section">
+
+            <i class="fas fa-mobile-screen fa-2x mb-3"></i>
+
+            <p class="mb-0 fw-bold">
+                Nội dung này hiển thị trên màn hình nhỏ hơn 768px.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PHẦN TỔNG HỢP ================= -->
+
+    <section class="container my-5">
+
+        <h3 class="text-center mb-4">
+            Tổng hợp các tiện ích Bootstrap
+        </h3>
+
+        <div class="row g-3">
+
+            <div class="col-sm-6 col-lg-3">
+
+                <div class="card h-100 text-center">
+
+                    <div class="card-body">
+
+                        <i class="fas fa-table-columns fa-2x text-primary mb-3"></i>
+
+                        <h5 class="card-title">
+                            Grid
+                        </h5>
+
+                        <p class="card-text">
+                            Chia bố cục thành các cột.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-sm-6 col-lg-3">
+
+                <div class="card h-100 text-center">
+
+                    <div class="card-body">
+
+                        <i class="fas fa-arrows-left-right fa-2x text-success mb-3"></i>
+
+                        <h5 class="card-title">
+                            Flexbox
+                        </h5>
+
+                        <p class="card-text">
+                            Căn chỉnh các phần tử.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-sm-6 col-lg-3">
+
+                <div class="card h-100 text-center">
+
+                    <div class="card-body">
+
+                        <i class="fas fa-expand fa-2x text-warning mb-3"></i>
+
+                        <h5 class="card-title">
+                            Spacing
+                        </h5>
+
+                        <p class="card-text">
+                            Điều chỉnh margin và padding.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-sm-6 col-lg-3">
+
+                <div class="card h-100 text-center">
+
+                    <div class="card-body">
+
+                        <i class="fas fa-eye fa-2x text-danger mb-3"></i>
+
+                        <h5 class="card-title">
+                            Display
+                        </h5>
+
+                        <p class="card-text">
+                            Điều khiển hiển thị phần tử.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p class="mb-0">
+            Bootstrap Grid Practice &copy; 2026
+        </p>
+
+    </footer>
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+
+</html>
