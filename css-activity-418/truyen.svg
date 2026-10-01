@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420">
+<rect width="1200" height="420" fill="#f7e8c3"/>
+<circle cx="170" cy="90" r="45" fill="#ffd166"/>
+<rect x="0" y="300" width="1200" height="120" fill="#9bcf8a"/>
+<path d="M0 300 Q200 230 400 300 T800 300 T1200 300" fill="#b7dc98"/>
+<path d="M420 315 L500 180 L580 315 Z" fill="#c97b63"/>
+<rect x="455" y="250" width="90" height="65" fill="#f3d6a2"/>
+<path d="M455 250 L500 210 L545 250 Z" fill="#8b5a2b"/>
+<text x="600" y="110" text-anchor="middle" font-family="Georgia, serif" font-size="64" fill="#7b3f00">Thư viện truyện</text>
+<text x="600" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" fill="#5d4037">Những câu chuyện nhỏ và bài học ý nghĩa</text>
+</svg>
