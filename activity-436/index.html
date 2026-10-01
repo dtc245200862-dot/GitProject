@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kho Phim Hoạt Hình</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">🎬 Hoạt Hình Việt</div>
+        <nav class="head-link">
+            <a class="active" href="#home">Trang chủ</a>
+            <a href="#new">Phim mới</a>
+            <a href="#popular">Phim xem nhiều</a>
+            <a href="#about">Giới thiệu</a>
+        </nav>
+    </header>
+
+    <main class="container" id="home">
+        <aside class="left-content">
+            <h2>Danh sách phim</h2>
+            <a href="#video1" class="movie active-movie">Doraemon - Tập 1</a>
+            <a href="#video2" class="movie">Tom & Jerry</a>
+            <a href="#video3" class="movie">Mickey Mouse</a>
+            <a href="#video4" class="movie">Pocoyo</a>
+        </aside>
+
+        <section class="right-content">
+            <div class="video-section" id="video1">
+                <h1>Doraemon - Tập 1</h1>
+                <video controls poster="https://via.placeholder.com/900x500?text=Hoat+Hinh">
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Trình duyệt của bạn không hỗ trợ thẻ video.
+                </video>
+                <p>Phim hoạt hình được chọn từ danh sách bên trái.</p>
+            </div>
+
+            <div class="video-section" id="video2">
+                <h2>Tom & Jerry</h2>
+                <iframe src="https://www.youtube.com/embed/t0Q2otsqC4I" title="Tom and Jerry" allowfullscreen></iframe>
+            </div>
+
+            <div class="video-section" id="video3">
+                <h2>Mickey Mouse</h2>
+                <iframe src="https://www.youtube.com/embed/4d9WmK3Q8uE" title="Mickey Mouse" allowfullscreen></iframe>
+            </div>
+
+            <div class="video-section" id="video4">
+                <h2>Pocoyo</h2>
+                <iframe src="https://www.youtube.com/embed/8Z4b5j9M7hE" title="Pocoyo" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer id="about">
+        <p>© 2026 Hoạt Hình Việt - Website học tập HTML & CSS</p>
+    </footer>
+</body>
+</html>
