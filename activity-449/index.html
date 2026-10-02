@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Surface - Bootstrap Landing Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { font-family: Arial, sans-serif; }
+    .hero { min-height: 620px; background: #f4f4f4; }
+    .hero-img { width: 100%; height: 620px; object-fit: cover; }
+    .product-card img { height: 250px; object-fit: contain; background: #f7f7f7; }
+    .feature-img { height: 360px; object-fit: cover; }
+    .section-title { letter-spacing: -1px; }
+    @media (max-width: 767px) {
+      .hero-img { height: 420px; }
+      .hero { min-height: auto; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top">
+  <div class="container-fluid px-4">
+    <a class="navbar-brand fw-bold" href="#">Microsoft</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#products">Surface</a></li>
+        <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+        <li class="nav-item"><a class="nav-link" href="#compare">Compare</a></li>
+        <li class="nav-item"><a class="nav-link" href="#support">Support</a></li>
+      </ul>
+      <button class="btn btn-primary">Shop Surface</button>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container-fluid p-0">
+    <div class="row g-0 align-items-center">
+      <div class="col-lg-6 p-5">
+        <span class="badge text-bg-dark mb-3">NEW SURFACE</span>
+        <h1 class="display-3 fw-bold section-title">Meet Surface</h1>
+        <p class="lead my-4">Power and performance that keeps up with how you think, move, and make.</p>
+        <div class="d-flex gap-2 flex-wrap">
+          <a href="#products" class="btn btn-primary btn-lg">Explore Surface</a>
+          <a href="#features" class="btn btn-outline-dark btn-lg">Learn more</a>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <img class="hero-img" src="https://images.ctfassets.net/jy9s7k22hbg4/6axAaUG7vwAgkKbYf1UYO0/121aea979c4dbf2ca576760222db8087/COM_100_Hero_Mobile_Poster.jpg" alt="Surface device">
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="products" class="py-5">
+  <div class="container py-4">
+    <div class="text-center mb-5">
+      <h2 class="display-5 fw-bold">Find your Surface</h2>
+      <p class="text-secondary">Choose a device designed for work, study, creativity and entertainment.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="card product-card h-100 border-0 shadow-sm">
+          <img src="https://images.ctfassets.net/jy9s7k22hbg4/0j00Tu86R8WHiyybR0Fz4/6dfb1a960373a9cfc19859a12f0a9b10/COM_Pro.jpg" class="card-img-top" alt="Surface Pro">
+          <div class="card-body p-4">
+            <h3 class="h4">Surface Pro</h3>
+            <p class="text-secondary">Power that adapts to how you work with a flexible tablet and laptop design.</p>
+            <a href="#" class="btn btn-outline-primary">Learn more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card product-card h-100 border-0 shadow-sm">
+          <img src="https://images.ctfassets.net/jy9s7k22hbg4/2hnKhYS1v15qh3ONAzOhha/3a388e18c8eb697b0bad36932461e2df/COM_Rayne.jpg" class="card-img-top" alt="Surface Laptop">
+          <div class="card-body p-4">
+            <h3 class="h4">Surface Laptop</h3>
+            <p class="text-secondary">A beautifully refined laptop built for everyday productivity and creativity.</p>
+            <a href="#" class="btn btn-outline-primary">Learn more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 col-lg-4">
+        <div class="card h-100 border-0 bg-dark text-white shadow-sm">
+          <div class="card-body p-4 d-flex flex-column justify-content-center">
+            <span class="badge text-bg-light text-dark align-self-start mb-3">SURFACE</span>
+            <h3 class="display-6 fw-bold">Made for makers</h3>
+            <p class="text-white-50">Create, connect and get more done wherever inspiration takes you.</p>
+            <a href="#features" class="btn btn-light align-self-start">Discover features</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="features" class="py-5 bg-light">
+  <div class="container py-4">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <h2 class="display-5 fw-bold">Effortlessly exceptional</h2>
+        <p class="lead text-secondary">Every edge, curve and finish is designed for a balance between portability, durability and a premium look.</p>
+        <div class="list-group list-group-flush mt-4">
+          <div class="list-group-item bg-transparent px-0 py-3"><strong>01. Portable design</strong><br><span class="text-secondary">Easy to carry and ready for everyday tasks.</span></div>
+          <div class="list-group-item bg-transparent px-0 py-3"><strong>02. Brilliant display</strong><br><span class="text-secondary">A 3:2 aspect ratio gives you more vertical space.</span></div>
+          <div class="list-group-item bg-transparent px-0 py-3"><strong>03. Built for speed</strong><br><span class="text-secondary">Smooth multitasking for apps, calls and creative work.</span></div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <img class="feature-img w-100 rounded-3" src="https://images.ctfassets.net/jy9s7k22hbg4/2hnKhYS1v15qh3ONAzOhha/3a388e18c8eb697b0bad36932461e2df/COM_Rayne.jpg" alt="Surface Laptop">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="compare" class="py-5">
+  <div class="container py-4">
+    <div class="text-center mb-5">
+      <h2 class="display-5 fw-bold">Why Surface?</h2>
+      <p class="text-secondary">Bootstrap components are used throughout this landing page.</p>
+    </div>
+    <div class="row g-4 text-center">
+      <div class="col-md-4"><div class="p-4 border rounded-3 h-100"><div class="display-5 fw-bold">3:2</div><h3 class="h5 mt-3">More screen space</h3><p class="text-secondary">Comfortable for reading, writing and multitasking.</p></div></div>
+      <div class="col-md-4"><div class="p-4 border rounded-3 h-100"><div class="display-5 fw-bold">AI</div><h3 class="h5 mt-3">Smart experiences</h3><p class="text-secondary">Modern tools designed to help you create and work.</p></div></div>
+      <div class="col-md-4"><div class="p-4 border rounded-3 h-100"><div class="display-5 fw-bold">∞</div><h3 class="h5 mt-3">Made to move</h3><p class="text-secondary">A flexible design for work, study and entertainment.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="support" class="py-5 bg-dark text-white">
+  <div class="container py-5 text-center">
+    <h2 class="display-5 fw-bold">Ready to find your Surface?</h2>
+    <p class="lead text-white-50">Explore the range and choose the device that fits your day.</p>
+    <a href="#products" class="btn btn-light btn-lg">Explore devices</a>
+  </div>
+</section>
+
+<footer class="py-4 bg-black text-white-50">
+  <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+    <span>Bootstrap Landing Page - Activity 449</span>
+    <span>Practice using Bootstrap components</span>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
