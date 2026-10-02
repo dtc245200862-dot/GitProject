@@ -4,4 +4,14 @@
          xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
          version="6.0">
     <display-name>Currency Converter</display-name>
+
+    <servlet>
+        <servlet-name>ConverterServlet</servlet-name>
+        <servlet-class>com.codegym.ConverterServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ConverterServlet</servlet-name>
+        <url-pattern>/convert</url-pattern>
+    </servlet-mapping>
 </web-app>
